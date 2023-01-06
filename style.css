@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --body-color: #e4e9f7;
+    --container-color: #fff;
+    --text-color: #121212;
+}
+body.dark-mode {
+    --body-color: #18191a;
+    --container-color: #121212;
+    --text-color: #ccc;
+}
+body{
+    background-color: var(--body-color);
+    transition: all 0.4s ease;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 89px auto;
+    margin-inline: auto;
+    width: min(100% - 1em, 45em);
+    padding: 86px;
+    background-color: var(--container-color);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+
+}
+.text{
+    color: var(--text-color);
+    margin: 10px auto;
+    font-size: 2rem;
+}
